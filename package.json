@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "towoff": "ttf2woff font-result.ttf font-converted.woff",
-    "towoff2": "cat font-result.ttf | ttf2woff2 >> font-converted.woff2"
+    "fontcompress":"pyftsubset fonts/OpenSans-Regular.ttf --output-file=fonts/OpenSans-Regular--conv.ttf --unicodes-file=codes.txt",
+    "towoff": "ttf2woff fonts/OpenSans-Regular--conv.ttf fonts/OpenSans-Regular.woff",
+    "towoff2": "cat fonts/OpenSans-Regular--conv.ttf | ttf2woff2 >> fonts/OpenSans-Regular.woff2"
   }
 }
