@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "towoff": "ttf2woff font-result.ttf font-converted.woff",
+    "towoff2": "cat font-result.ttf | ttf2woff2 >> font-converted.woff2"
+  }
+}
